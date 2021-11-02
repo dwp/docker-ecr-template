@@ -4,7 +4,7 @@
 
 This is a template for creating docker images for dataworks. The flow starts from a concourse pipeline and then triggers into GHA workflow to build docker images then pushes the image into a private ECR repository.
 This repo contains Makefile, Dockerfile and base terraform folders and jinja2 files to fit the standard pattern.
-This repo is a base to create new non-Terraform repos, adding the githooks submodule, making the repo ready for use.
+This repo is a base to create new Docker building repos, adding the githooks submodule, making the repo ready for use.
 
 Running aviator will create the pipeline required on the AWS-Concourse instance, in order pass a mandatory CI ran status check.  this will likely require you to login to Concourse, if you haven't already.
 
